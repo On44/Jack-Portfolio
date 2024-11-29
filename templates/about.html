@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="about-content">
+        <img src="{{ url_for('static', filename='images/jacc.jpeg') }}" alt="Jack Oluoch's Photo" class="profile-pic">
+        <div class="about-text">
+            <p>Hello! My name is <strong>Jack Oluoch</strong>, and I am a <strong>Software Developer</strong> passionate about creating innovative and impactful web and mobile applications.</p>
+            <p>I specialize in <strong>web development</strong>, <strong>app development</strong>, <strong>data analysis</strong>, and <strong>finance</strong>. I have hands-on experience working on various projects, including developing a comprehensive POS system, <em>"BigSeller"</em>, and an e-commerce platform, <em>"The Prime Boutique Shop"</em>.</p>
+            <p>My goal is to design and deliver software solutions that drive digital transformation for businesses and create value for users.</p>
+            <p>When I’m not coding, I enjoy <strong>reading</strong>, <strong>gaming</strong>, and <strong>traveling</strong> to explore new cultures and ideas.</p>
+        </div>
+    </div>
+</section>
+
+<section id="skills" class="skills">
+    <h3>Skills</h3>
+    <ul>
+        <li><strong>Programming Languages:</strong> Python, JavaScript, HTML, CSS</li>
+        <li><strong>Frameworks & Libraries:</strong> Flask, React, Node.js</li>
+        <li><strong>Development Tools:</strong> Git, VS Code, Postman, Figma</li>
+        <li><strong>Database Management:</strong> MySQL, MongoDB</li>
+        <li><strong>Additional Expertise:</strong> UI/UX Design, API Development</li>
+    </ul>
+</section>
+{% endblock %}
